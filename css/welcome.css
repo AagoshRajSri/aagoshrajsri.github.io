@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('./cursorAXE.png'), auto;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+#page-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 50%;
+    width: 75%;
+}
+#page-1 h1{
+    font-size: 15vw;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    cursor: default; 
+}
+
+.box h1:hover{
+    color: white;
+}
+
+
+#page-2 {
+    height: 100vh; /* Ensure full viewport height */
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+}
+
+.page-2-shape {
+    height: 100%;
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2-box1{
+    position: relative;
+    height: 20%;
+    width: 20%;
+}
+
+.page2-box1 {
+    /* background-color: rgb(186, 61, 61); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.page2-box1 i{
+    font-size: 185px;
+}
+.page2-box1 i:hover{
+    font-size: 185px;
+    color: black;
+    background-color: white;
+}
+
+.about-me {
+    width: 50%; /* Takes right half */
+    color: white;
+    padding: 10px;
+    margin-top: 35px;
+    height: auto; /* Let content grow */
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+.about-me h1{
+    font-size: 5vw;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* cursor: default; */
+    display: inline-block;
+    opacity: 0;
+}
+.about-me p{
+    font-size: 28px;
+    /* font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal; */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* cursor: default; */
+    margin: 5px;
+}
+.highlighted-text span {
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+}
+.highlighted-text span:hover {
+    background-color: white;
+    color: black;
+}
+#page-3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.page3-navbar{
+    height: 15%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page3-navbar h1{
+    font-size: 3vw;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* cursor: default; */
+    padding: 20px 100px;
+}
+.page3-navbar h1:hover{
+    color: white;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+.page3-content{
+    height: 100vh;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+#page-4{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+
+}
+.page4-heading{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    /* cursor: default; */
+    transition: all 0.5s ease-out;
+}
+.page4-heading:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.page4-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 80px
+}
+
+.page4-box1{
+    height: 70%;
+    width:25%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 45px;
+
+}
+.website-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: beige; */
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.website-h1{
+    height: 15%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.website-1{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-1:hover{
+    background-color: white;
+    color: black;
+}
+.website-2{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-2:hover{
+    background-color: white;
+    color: black;
+}
+
+.website-3{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-3:hover{
+    background-color: white;
+    color: black;
+}
+.arrow1{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding : 0 10px;
+}
+.arrow1:hover{
+    height: 10%;
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0 10px;
+}
+
+.page4-box2{
+    height: 70%;
+    width:25%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 45px;
+
+}
+.game-content{
+        height: 100%;
+        width: 100%;
+        /* background-color: beige; */
+        border-radius: 20px;
+        font-size: 40px;
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+.game-h1{
+    height: 15%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.game-1{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-1:hover{
+    background-color: white;
+    color: black;
+}
+.game-2{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-2:hover{
+    background-color: white;
+    color: black;
+}
+
+.game-3{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-3:hover{
+    background-color: white;
+    color: black;
+}
+.arrow1{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding : 0 10px;
+}
+.arrow1:hover{
+    height: 10%;
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 10px;
+}
+
+.page4-box3{
+    height: 70%;
+    width: 25%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 45px;
+
+}
+
+.text-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: beige; */
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.text-h1{
+height: 15%;
+width: 100%;
+background-color: rgb(255, 255, 255);
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+font-family: "Sigmar", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.text-1{
+height: 25%;
+width: 100%;
+background-color: rgb(0, 0, 0);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-1:hover{
+background-color: white;
+color: black;
+}
+.text-2{
+height: 25%;
+width: 100%;
+background-color: rgb(0, 0, 0);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-2:hover{
+background-color: white;
+color: black;
+}
+
+.text-3{
+height: 25%;
+width: 100%;
+background-color: rgb(0, 0, 0);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-3:hover{
+background-color: white;
+color: black;
+}
+.arrow1{
+color: white;
+display: flex;
+justify-content: end;
+align-items: center;
+padding : 0 10px;
+}
+.arrow1:hover{
+height: 10%;
+width: 100%;
+color: black;
+background-color: white;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+padding: 0 10px;
+}
+
+
+#page-5{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 50px solid rgb(255, 255, 255);
+}
+
+.page5-content {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    border: 2px solid black;
+    border-bottom: white;
+}
+
+.page5-box {
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+    animation: musicplayer 1s ease-in-out infinite alternate;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+.page5-box:hover {
+    background-color: rgb(72, 203, 80);
+    color: black;
+}
+
+@keyframes musicplayer {
+    0% {
+        height: 10%;
+    }
+    100% {
+        height: 80%;
+    }
+}
+
+.page5-content2{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+    border: 2px solid black;
+    border-top: white;
+
+}
+.page5-box2 {
+    height: 80%;
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+    animation: musicplayer2 1s ease-in-out infinite alternate;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+.page5-box2:hover {
+    background-color: rgb(93, 199, 89);
+    color: black;
+}
+@keyframes musicplayer2 {
+    0% {
+        height: 10%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+#page-6{
+    height: 100%;
+    width: 100%;
+}
+
+.future-plan{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.future-plan h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+.future-plan h1:hover{
+    background-color: white;
+    color: black;
+}
+.future-content{
+    height: 90%;
+    width: 100%;
+    background-image: linear-gradient(black, grey);
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+.future-content i{
+    font-size: 3vw;
+    display: inline-block;
+    position: relative;
+    left: 80vw;
+}
+.future-content p{
+    font-size: 1.2vw;
+    text-wrap: wrap;
+}
+.framework{
+    height: 33%;
+    width: 100%;
+    padding: 50px 50px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+
+.framework:hover{
+    background-color: white;
+    color: black;
+}
+
+.blockchain{
+    height: 33.5%;
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 50px;
+}
+.blockchain:hover{
+    background-color: white;
+    color: black;
+}
+.flutter{
+    height: 33.5%;
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 50px;
+}
+.flutter:hover{
+    background-color: white;
+    color: black;
+}
