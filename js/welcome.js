@@ -89,28 +89,48 @@ var hobbies = document.querySelector(".hobbies");
 var page3content = document.querySelector(".page3-content");
 
 // TECH STACK
+const message = () => {
+  page3content.innerHTML = "React, JavaScript, HTML, CSS, Node.js, Express, MongoDB, Git, Figma, Adobe Photoshop"
+  page3content.style.color = "white";
+}
+
 techstack.addEventListener("mouseenter", function () {
     page3content.style.backgroundColor = "black"; 
+    message();
 });
 
 techstack.addEventListener("mouseleave", function () {
     page3content.style.backgroundColor = "white"; 
+    page3content.innerHTML = "";
 });
+
+const message2 = () => {
+  page3content.innerHTML = "Problem-Solving, Critical Thinking, Communication, Collaboration & Teamwork, Time Management, Adaptability, Leadership & Initiative";
+  page3content.style.color = "white";
+}
 // SKILLS
 skills.addEventListener("mouseenter", function () {
     page3content.style.backgroundColor = "black"; 
+    message2();
 });
 
 skills.addEventListener("mouseleave", function () {
-    page3content.style.backgroundColor = "white"; 
+    page3content.style.backgroundColor = "white";
+    page3content.innerHTML = ""; 
 });
 // HOBBIES
+const message3 = () => {
+  page3content.innerHTML = "HOBBIES";
+  page3content.style.color = "white";
+}
 hobbies.addEventListener("mouseenter", function () {
     page3content.style.backgroundColor = "black"; 
+    message3();
 });
 
 hobbies.addEventListener("mouseleave", function () {
     page3content.style.backgroundColor = "white"; 
+    page3content.innerHTML = "";
 });
 
 gsap.from(techstack, {
