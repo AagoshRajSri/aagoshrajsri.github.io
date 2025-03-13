@@ -89,9 +89,15 @@ var hobbies = document.querySelector(".hobbies");
 var page3content = document.querySelector(".page3-content");
 
 // TECH STACK
+const originalContent = page3content.innerHTML;
+
 const message = () => {
-  page3content.innerHTML = "React, JavaScript, HTML, CSS, Node.js, Express, MongoDB, Git, Figma, Adobe Photoshop"
-  page3content.style.color = "white";
+  const techStackItems = [
+    "React", "JavaScript", "HTML", "CSS", "Node.js", 
+    "Express", "MongoDB", "Git", "Filmora", "Adobe PhotoShop"
+  ];
+
+  page3content.innerHTML = `<ul style="color: white;">${techStackItems.map(item => `<li>${item}</li>`).join("")}</ul>`;
 }
 
 techstack.addEventListener("mouseenter", function () {
@@ -99,16 +105,22 @@ techstack.addEventListener("mouseenter", function () {
     message();
 });
 
+
 techstack.addEventListener("mouseleave", function () {
     page3content.style.backgroundColor = "white"; 
-    page3content.innerHTML = "";
+    page3content.innerHTML = originalContent;
 });
 
 const message2 = () => {
-  page3content.innerHTML = "Problem-Solving, Critical Thinking, Communication, Collaboration & Teamwork, Time Management, Adaptability, Leadership & Initiative";
-  page3content.style.color = "white";
+  const skillsList = [
+    "Problem-Solving", "Critical Thinking", "Communication", 
+    "Collaboration & Teamwork", "Time Management", 
+    "Adaptability", "Leadership & Initiative"
+  ];
+
+  page3content.innerHTML = `<ul style="color: white;">${skillsList.map(skill => `<li>${skill}</li>`).join("")}</ul>`;
 }
-// SKILLS
+
 skills.addEventListener("mouseenter", function () {
     page3content.style.backgroundColor = "black"; 
     message2();
@@ -116,13 +128,15 @@ skills.addEventListener("mouseenter", function () {
 
 skills.addEventListener("mouseleave", function () {
     page3content.style.backgroundColor = "white";
-    page3content.innerHTML = ""; 
+    page3content.innerHTML = originalContent; 
 });
-// HOBBIES
+
 const message3 = () => {
-  page3content.innerHTML = "HOBBIES";
-  page3content.style.color = "white";
+  const hobbiesList = ["Reading", "Coding", "Photography", "Gaming", "Traveling", "Eating", "Drinking Tea"];
+
+  page3content.innerHTML = `<ul style="color: white;">${hobbiesList.map(hobby => `<li>${hobby}</li>`).join("")}</ul>`;
 }
+
 hobbies.addEventListener("mouseenter", function () {
     page3content.style.backgroundColor = "black"; 
     message3();
@@ -130,8 +144,9 @@ hobbies.addEventListener("mouseenter", function () {
 
 hobbies.addEventListener("mouseleave", function () {
     page3content.style.backgroundColor = "white"; 
-    page3content.innerHTML = "";
+    page3content.innerHTML = originalContent;
 });
+
 
 gsap.from(techstack, {
   y: 100,
@@ -174,7 +189,35 @@ gsap.from(page4head, {
 
 var page4box1 = document.querySelector(".page4-box1");
 var page4box2 = document.querySelector(".page4-box2");
-var page4box3 = document.querySelector(".page4-box3"); 
+var page4box3 = document.querySelector(".page4-box3");
+var sundownStudio = document.querySelector(".website-1");
+var restaurant = document.querySelector(".website-2");
+var rockpaperscissorGame = document.querySelector(".game-1");
+var tictactoeGame = document.querySelector(".game-2");
+var quizGame = document.querySelector(".game-3");
+
+
+
+sundownStudio.addEventListener('click', function(){
+  window.open('https://aagoshrajsri.github.io/Sundown-Studio-Clone/', "_blank");
+})
+
+restaurant.addEventListener('click', function(){
+  window.open("https://aagoshrajsri.github.io/RAJ/", "_blank");
+})
+
+rockpaperscissorGame.addEventListener('click', function(){
+  window.open("https://aagoshrajsri.github.io/Rock-Paper-Scissors/", "_blank");
+})
+
+tictactoeGame.addEventListener('click', function(){
+  window.open('https://aagoshrajsri.github.io/Tic-Tac-Toe/', "_blank");
+})
+
+quizGame.addEventListener('click', function(){
+  window.open('https://aagoshrajsri.github.io/QUIZ/', "_blank");
+})
+
 
 gsap.from(page4box1, {
   y: 100,
@@ -211,6 +254,8 @@ gsap.from(".website-content div", {
   stagger: 0.15, // Delays each element slightly
   ease: "power2.out"
 });
+
+
 
 gsap.from(".game-content div", {
   y: 100,

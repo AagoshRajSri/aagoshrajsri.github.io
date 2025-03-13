@@ -172,16 +172,34 @@ body{
     background-color: black;
     transition: all 0.3s ease-in-out;
 }
-.page3-content{
+.page3-content {
     height: 100vh;
     width: 100%;
     transition: background-color 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
     padding: 50px;
-    font-size: 2.3vw;
+    font-size: 2vw; /* Reduce font size */
+    word-wrap: break-word; /* Ensures long words break */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    flex-wrap: wrap;
 }
 
+ .page3-content ul {
+    padding-left: 20px; /* Indent bullet points */
+    list-style-type: disc; /* Ensure bullets appear */
+} 
+
+.page3-content li {
+    display: block; /* Ensures each item is on a new line */
+    margin-bottom: 10px; /* Add spacing between items */
+}
+
+.page3-content img{
+    height: 35vh;
+    width: 25vw;
+}
 
 
 
